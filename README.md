@@ -23,7 +23,9 @@ Each task focuses on different aspects of web development and programming concep
 - **[Task 2](./Task2/)**
   - **Description**: A webpage for a catchup mobile Application.
   - **Tech**: HTML5, CSS, Responsive Design
-
+- **[Task 3](./Task3/)**
+  - **Description**: A webpage for award submission only frontend.
+  - **Tech**: HTML5, CSS, Responsive Design
 
 
 ## Objectives

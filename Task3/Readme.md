@@ -30,15 +30,6 @@ A simple **HTML & CSS front-end form** for award submissions. Collects user deta
 
 ---
 
-## Setup
-
-1. Save the HTML code as `index.html`.  
-2. Place the logo in `task-3-images/logo.png`.  
-3. Open `index.html` in a web browser.
-
----
-
-
 ## Notes
 
 - Front-end only, no data storage.  

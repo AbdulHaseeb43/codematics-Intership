@@ -12,19 +12,19 @@ It is ideal for showcasing award data, brand reports, or digital rankings in a v
 
 Follow these steps to run the project locally:
 
-Clone or Download
+**Clone or Download**
 
 Clone the repository or download the ZIP file.
 
 Extract it to your local machine.
 
-Asset Organization
+**Asset Organization**
 
 Place all images inside a folder named task-4/ relative to index.html.
 
-If your images are stored elsewhere, update the <img src=""> paths accordingly.
+If your images are stored elsewhere, update the paths accordingly.
 
-Required images include:
+**Required images include:**
 
 logo.png
 
@@ -32,11 +32,11 @@ icon_awards.png
 
 Club logos (e.g., 1.png, 2.png, etc.)
 
-CSS Linking
+**CSS Linking**
 
 Ensure style4.css is in the same directory as index.html.
 
-Launch
+**Launch**
 
 Open index.html in any modern web browser:
 
@@ -46,7 +46,6 @@ Firefox
 
 Edge
 
-Safari
 
 ✨ Features Implemented
 

@@ -17,17 +17,20 @@ Each task focuses on different aspects of web development and programming concep
 ## Projects & Tasks
 
 - **[Task 1](./Task1/)**
- **Description**: A semantic HTML5 and CSS Flexbox implementation demonstrating a classic three-column web layout (Header, Nav,  Sidebars, Main Content, Footer).
+  
+  - **Description**: A semantic HTML5 and CSS Flexbox implementation demonstrating a classic three-column web layout (Header, Nav,  Sidebars, Main Content, Footer).
   - **Tech**: HTML, CSS
 
 - **[Task 2](./Task2/)**
   - **Description**: A webpage for a catchup mobile Application.
   - **Tech**: HTML5, CSS, Responsive Design
+  - 
 - **[Task 3](./Task3/)**
   - **Description**: A webpage for award submission only frontend.
   - **Tech**: HTML5, CSS, Responsive Design
--**[Task 4](./Task4/)**
-  -**Description**: A clean, responsive, and high-impact web interface representing the Red Card 2018
+
+- **[Task 4](./Task4/)**
+  - **Description**: A clean, responsive, and high-impact web interface representing the Red Card 2018
   - **Tech**: HTML5, CSS, Responsive Design
     
 ## Objectives

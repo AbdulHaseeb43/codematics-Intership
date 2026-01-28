@@ -19,16 +19,16 @@ Follow these steps to run the project locally:
 * Extract it to your local machine.
 
 ### 2. Asset Organization
-Place all images inside a folder named `task-4/` relative to `index.html`. Required images include:
+Place all images inside a folder named `task-4/` relative to `task4.html`. Required images include:
 * `logo.png`
 * `icon_awards.png`
 * Club logos (e.g., `1.png`, `2.png`, etc.)
 
 ### 3. CSS Linking
-Ensure `style4.css` is in the same directory as `index.html`.
+Ensure `style4.css` is in the same directory as `task4.html`.
 
 ### 4. Launch
-Open `index.html` in any modern web browser (Chrome, Firefox, or Edge).
+Open `task4.html` in any modern web browser (Chrome, Firefox, or Edge).
 
 ---
 

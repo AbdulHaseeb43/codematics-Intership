@@ -1,42 +1,105 @@
-**Red Card 2018 Report - Web Representation**
-A clean, responsive, and high-impact web interface representing the Red Card 2018 China Digital Football Awards. This project showcases the leading European football clubs and their digital influence in the Chinese market using a modern, structured CSS layout.
+🟥 Red Card 2018 Report – Web Representation
 
-🚀 **Project Setup**
-To get this project running on your local machine, follow these simple steps:
+A clean, responsive, and high-impact web interface representing the Red Card 2018 – China Digital Football Awards.
+This project highlights leading European football clubs and their digital influence in the Chinese market using a modern, structured CSS layout.
 
-Clone or Download: Save the project files to your local directory.
+📌 Project Overview
 
-Asset Organization: Ensure your images are placed in a folder named task-4 relative to your HTML file, or update the <img> src paths to match your directory structure.
+This web project recreates a premium report-style layout using HTML5 and CSS3, focusing on bold typography, geometric design elements, and flexible layouts.
+It is ideal for showcasing award data, brand reports, or digital rankings in a visually compelling way.
 
-Required images: logo.png, icon_awards.png, and club logos (e.g., 1.png).
+🚀 Project Setup
 
-File Linking: Ensure style4.css is in the same directory as your index.html.
+Follow these steps to run the project locally:
 
-Launch: Open index.html in any modern web browser (Chrome, Firefox, Edge, or Safari).
+Clone or Download
 
-✨ **Features Implemented**
-Custom Geometric Styling: Utilizes CSS pseudo-elements (::after) to create a distinctive slanted "cut-out" effect on the header and footer sections.
+Clone the repository or download the ZIP file.
 
-Flexbox Grid System: A fully flexible club-grid layout that ensures award winners are displayed in a clean, professional row.
+Extract it to your local machine.
 
-Typography Focus: Precise use of Arial Black and hierarchical font weights to replicate a premium report aesthetic.
+Asset Organization
 
-Layered Visuals: Use of z-index and relative positioning to manage overlapping elements and background effects.
+Place all images inside a folder named task-4/ relative to index.html.
 
-Structured Content: Organized into logical segments: Header (upper), Award Categories (mid), and Future Teaser (lower).
+If your images are stored elsewhere, update the <img src=""> paths accordingly.
 
-🛠️ **Technologies Used**
-HTML5: Semantic structure for content.
+Required images include:
 
-CSS3: Custom styling featuring:
+logo.png
 
-Flexbox: For alignment and distribution of the club items.
+icon_awards.png
 
-Positioning: Absolute and relative positioning for complex layout overlays.
+Club logos (e.g., 1.png, 2.png, etc.)
 
-Pseudo-elements: Used for the decorative white corner accents.
+CSS Linking
 
-Google Fonts/Web Safe Fonts: Arial and Arial Black for a bold, corporate feel.
+Ensure style4.css is in the same directory as index.html.
 
-📝 **Note on Images**
-The current code references a task-4/ directory. If your images are stored elsewhere, simply perform a "Find and Replace" for the src attributes in the HTML file
+Launch
+
+Open index.html in any modern web browser:
+
+Chrome
+
+Firefox
+
+Edge
+
+Safari
+
+✨ Features Implemented
+
+Custom Geometric Styling
+
+CSS pseudo-elements (::after) create distinctive slanted “cut-out” effects in the header and footer.
+
+Flexbox Grid System
+
+A flexible, responsive grid layout for displaying award-winning clubs in a clean row structure.
+
+Typography Focus
+
+Strategic use of Arial Black and bold font weights to achieve a premium report aesthetic.
+
+Layered Visual Design
+
+Uses z-index, relative, and absolute positioning to manage overlapping elements and background accents.
+
+Structured Content Layout
+
+Clearly divided into sections:
+
+Header (Upper Section)
+
+Award Categories (Middle Section)
+
+Future Teaser (Lower Section)
+
+🛠️ Technologies Used
+
+HTML5
+
+Semantic structure for accessibility and clarity.
+
+CSS3
+
+Flexbox for layout alignment and spacing
+
+Absolute & relative positioning for complex overlays
+
+Pseudo-elements for decorative visual effects
+
+Fonts
+
+Web-safe fonts: Arial and Arial Black for a bold, corporate feel.
+
+🖼️ Notes on Images
+
+The project references images from a task-4/ directory.
+
+If your directory structure differs:
+
+Use Find & Replace in your editor to update all src paths.
+
+Ensure image filenames match exactly to avoid broken links.

@@ -4,7 +4,7 @@ A clean, responsive, and high-impact web interface representing the **Red Card 2
 
 ---
 
-## <img src="task-4/icon_awards.png" width="28" vertical-align="middle"> Project Overview
+## Project Overview
 
 This web project recreates a premium report-style layout using HTML5 and CSS3, focusing on bold typography, geometric design elements, and flexible layouts. It is ideal for showcasing award data, brand reports, or digital rankings in a visually compelling way.
 

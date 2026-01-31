@@ -32,7 +32,7 @@ Tailwind CSS
 
 JavaScript (for mobile menu interactivity)
 
-🏗️ Page Sections Implemented
+## 🏗️ Page Sections Implemented
 Header with contact details
 
 Navigation bar
@@ -51,7 +51,7 @@ Testimonials & reports sidebar
 
 Structured footer content
 
-##📱 Responsiveness
+## 📱 Responsiveness
 The layout adapts seamlessly across:
 
 Desktop screens
@@ -62,7 +62,7 @@ Mobile devices
 
 All sections reflow appropriately while maintaining visual integrity.
 
-##🎯 Learning Outcomes
+## 🎯 Learning Outcomes
 This project helped strengthen:
 
 Responsive web design principles
@@ -79,5 +79,5 @@ Converting custom CSS to Tailwind CSS
 
 UI consistency and visual balance control
 
-##👨‍💻 Author
+## 👨‍💻 Author
 ABDUL HASEEB

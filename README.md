@@ -32,6 +32,10 @@ Each task focuses on different aspects of web development and programming concep
 - **[Task 4](./Task4/)**
   - **Description**: A clean, responsive, and high-impact web interface representing the Red Card 2018
   - **Tech**: HTML5, CSS, Responsive Design
+
+- **[Task 5](./Task5/)**
+  - **Description**:  Responsive Law Firm Web Page
+  - **Tech**: HTML5, CSS, Tailwind CSS
     
 ## Objectives
 

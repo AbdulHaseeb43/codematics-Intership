@@ -36,7 +36,12 @@ Each task focuses on different aspects of web development and programming concep
 - **[Task 5](./Task5/)**
   - **Description**:  Responsive Law Firm Web Page
   - **Tech**: HTML5, CSS, Tailwind CSS
-    
+
+  
+- **[Task 6](./Task6/)**
+  - **Description**:  Portfolio 
+  - **Tech**: HTML5, Tailwind CSS, Javascript
+  - 
 ## Objectives
 
 - Strengthen practical development skills  

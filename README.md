@@ -41,7 +41,7 @@ Each task focuses on different aspects of web development and programming concep
 - **[Task 6](./Task6/)**
   - **Description**:  Portfolio 
   - **Tech**: HTML5, Tailwind CSS, Javascript
-  - 
+
 ## Objectives
 
 - Strengthen practical development skills  

@@ -46,6 +46,10 @@ Each task focuses on different aspects of web development and programming concep
 - **[Task 7](./Task7/)**
   - **Description**: A responsive JavaScript toolkit showcasing modular, single-purpose utilities for temporal, unit, string, and health calculations in an elegant, device-       agnostic interface.
   - **Tech**: HTML5, Tailwind CSS, Javascript
+ 
+  - **[Task 6](./Task8/)**
+  - **Description**: Ultimate Workspace Dashboard
+  - **Tech**: HTML5, Tailwind CSS, Javascript
 
 ## Objectives
 

@@ -48,7 +48,7 @@ A complete web application with multiple tools built using JavaScript and Tailwi
 ## Technologies Used
 - HTML5
 - Tailwind CSS
-- Vanilla JavaScript
+- JavaScript
 - Local Storage API
 - Clipboard API
 

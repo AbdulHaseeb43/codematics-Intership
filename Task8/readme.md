@@ -54,9 +54,3 @@ A complete web application with multiple tools built using JavaScript and Tailwi
 
 ## Author
 Abdul Haseeb
-
-
-
-1. **Clone the repository**
-```bash
-git clone https://github.com/YOUR_USERNAME/javascript-practice-project.git

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "88ca4769-bcb7-41b4-909e-586b5efd170a",
+    "memberId": "M001",
+    "bookId": "B001",
+    "memberName": "ALi",
+    "bookTitle": "Coding",
+    "issueDate": "2026-02-28",
+    "dueDate": "2026-03-14",
+    "returnDate": null,
+    "fine": 0,
+    "status": "issued"
+  }
+]

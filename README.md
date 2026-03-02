@@ -50,6 +50,10 @@ Each task focuses on different aspects of web development and programming concep
 - **[Task 8](./Task8/)**
   - **Description**: Ultimate Workspace Dashboard
   - **Tech**: HTML5, Tailwind CSS, Javascript
+ 
+- **[Task 9](./Task9/)**
+  - **Description**: Library Management System
+  - **Tech**: React, Vite, Tailwind CSS, Node.js, Express.js
 
 ## Objectives
 

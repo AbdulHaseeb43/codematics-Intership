@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Work Space</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: linear-gradient(145deg, #1a2639, #0e1a2b);
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .btn {
+            transition: all 0.2s;
+        }
+
+        .btn:hover {
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+
+<body class="text-gray-200 p-5">
+
+
+    <div class="text-center mb-8">
+        <h1 class="text-4xl font-light tracking-wider mb-3"> My Work Space </h1>
+        <p class="text-gray-400 text-sm">All tools you need in one place</p>
+    </div>
+
+    <div class="max-w-md mx-auto mb-8 text-center">
+        <div class="card rounded-2xl p-5 border border-blue-500/30">
+            <div class="text-5xl font-mono text-blue-300" id="clock">00:00:00</div>
+            <div class="text-xs text-gray-500 mt-2">live time</div>
+        </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto mb-10 relative">
+        <div class="overflow-hidden rounded-2xl border border-white/10">
+            <div id="slideContainer" class="flex transition-all duration-500">
+       
+                <div
+                    class="min-w-full h-48 bg-gradient-to-r from-purple-600 to-pink-600 flex items-center justify-center">
+                    <div class="text-center">
+                        <h2 class="text-2xl font-bold">Welcome to Dashboard</h2>
+                        <p class="text-sm opacity-90">Your personal workspace</p>
+                    </div>
+                </div>
+   
+                <div
+                    class="min-w-full h-48 bg-gradient-to-r from-blue-600 to-cyan-600 flex items-center justify-center">
+                    <div class="text-center">
+                        <h2 class="text-2xl font-bold">Smart Tools</h2>
+                        <p class="text-sm opacity-90">Calculator • Clock • Converter</p>
+                    </div>
+                </div>
+      
+                <div
+                    class="min-w-full h-48 bg-gradient-to-r from-green-600 to-emerald-600 flex items-center justify-center">
+                    <div class="text-center">
+                        <h2 class="text-2xl font-bold">Stay Organized</h2>
+                        <p class="text-sm opacity-90">Manage tasks easily</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button onclick="goPrev()"
+            class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 w-8 h-8 rounded-full hover:bg-black/70">←</button>
+        <button onclick="goNext()"
+            class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 w-8 h-8 rounded-full hover:bg-black/70">→</button>
+
+     
+        <div class="flex justify-center gap-2 mt-3">
+            <div class="dot w-2 h-2 rounded-full bg-white/50" onclick="goToSlide(0)"></div>
+            <div class="dot w-2 h-2 rounded-full bg-white/50" onclick="goToSlide(1)"></div>
+            <div class="dot w-2 h-2 rounded-full bg-white/50" onclick="goToSlide(2)"></div>
+        </div>
+    </div>
+
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-3xl mx-auto mb-8">
+        <button onclick="showTab('tasks')" class="card p-3 rounded-xl hover:bg-white/10 btn text-pink-300">📋
+            Tasks</button>
+        <button onclick="showTab('calc')" class="card p-3 rounded-xl hover:bg-white/10 btn text-orange-300">🧮
+            Calculator</button>
+        <button onclick="showTab('password')" class="card p-3 rounded-xl hover:bg-white/10 btn text-purple-300">🔐
+            Password</button>
+        <button onclick="showTab('temp')" class="card p-3 rounded-xl hover:bg-white/10 btn text-blue-300">🌡️
+            Temperature</button>
+    </div>
+
+    <div id="tasks" class="tab-content max-w-2xl mx-auto card rounded-2xl p-5">
+        <div class="flex justify-between items-center mb-4">
+            <h2 class="text-xl text-pink-300">My Tasks</h2>
+            <span id="taskCounter" class="text-sm bg-pink-500/20 px-3 py-1 rounded-full">0 pending</span>
+        </div>
+
+ 
+        <div class="flex gap-2 mb-4">
+            <input type="text" id="taskInput" placeholder="Write something..."
+                class="w-full bg-black/30 p-3 rounded-xl border border-white/10">
+            <button onclick="addNewTask()" class="bg-pink-600 px-5 rounded-xl hover:bg-pink-700">Add</button>
+        </div>
+
+ 
+        <ul id="taskList" class="space-y-2"></ul>
+    </div>
+
+    <div id="calc" class="tab-content hidden max-w-sm mx-auto card rounded-2xl p-5">
+        <h2 class="text-xl text-orange-300 mb-4">Simple Calculator</h2>
+
+        <div class="bg-black/40 p-4 rounded-xl mb-3 text-right">
+            <div id="oldCalc" class="text-xs text-gray-500 h-4"></div>
+            <div id="calcDisplay" class="text-3xl">0</div>
+        </div>
+
+
+        <div class="grid grid-cols-4 gap-2">
+            <button onclick="clearAll()" class="bg-red-500/20 p-3 rounded-xl hover:bg-red-500">C</button>
+            <button onclick="backspace()" class="bg-gray-700 p-3 rounded-xl hover:bg-gray-600">⌫</button>
+            <button onclick="addToCalc('/')" class="bg-orange-500/50 p-3 rounded-xl hover:bg-orange-500">÷</button>
+            <button onclick="addToCalc('*')" class="bg-orange-500/50 p-3 rounded-xl hover:bg-orange-500">×</button>
+
+            <button onclick="addToCalc('7')" class="bg-gray-800 p-3 rounded-xl hover:bg-gray-700">7</button>
+            <button onclick="addToCalc('8')" class="bg-gray-800 p-3 rounded-xl hover:bg-gray-700">8</button>
+            <button onclick="addToCalc('9')" class="bg-gray-800 p-3 rounded-xl hover:bg-gray-700">9</button>
+            <button onclick="addToCalc('-')" class="bg-orange-500/50 p-3 rounded-xl hover:bg-orange-500">-</button>
+
+            <button onclick="addToCalc('4')" class="bg-gray-800 p-3 rounded-xl hover:bg-gray-700">4</button>
+            <button onclick="addToCalc('5')" class="bg-gray-800 p-3 rounded-xl hover:bg-gray-700">5</button>
+            <button onclick="addToCalc('6')" class="bg-gray-800 p-3 rounded-xl hover:bg-gray-700">6</button>
+            <button onclick="addToCalc('+')" class="bg-orange-500/50 p-3 rounded-xl hover:bg-orange-500">+</button>
+
+            <button onclick="addToCalc('0')" class="col-span-2 bg-gray-800 p-3 rounded-xl hover:bg-gray-700">0</button>
+            <button onclick="addToCalc('.')" class="bg-gray-800 p-3 rounded-xl hover:bg-gray-700">.</button>
+            <button onclick="getResult()" class="bg-green-600 p-3 rounded-xl hover:bg-green-700">=</button>
+        </div>
+    </div>
+
+
+    <div id="password" class="tab-content hidden max-w-md mx-auto card rounded-2xl p-5">
+        <h2 class="text-xl text-purple-300 mb-4">Password Generator</h2>
+
+     
+        <div class="flex gap-2 mb-4">
+            <input type="text" id="passDisplay" readonly
+                class="w-full bg-black/30 p-3 rounded-xl border border-white/10 font-mono">
+            <button onclick="copyPass()" class="bg-purple-600 px-4 rounded-xl hover:bg-purple-700">Copy</button>
+        </div>
+
+     
+        <div class="mb-4">
+            <label class="text-sm">Length: <span id="lenValue">12</span></label>
+            <input type="range" id="passLength" min="4" max="30" value="12" class="w-full" oninput="updateLen()">
+        </div>
+
+
+        <div class="grid grid-cols-2 gap-2 mb-4 text-sm">
+            <label class="flex items-center gap-2"><input type="checkbox" id="upper" checked> A-Z</label>
+            <label class="flex items-center gap-2"><input type="checkbox" id="lower" checked> a-z</label>
+            <label class="flex items-center gap-2"><input type="checkbox" id="nums" checked> 0-9</label>
+            <label class="flex items-center gap-2"><input type="checkbox" id="syms" checked> !@#$%</label>
+        </div>
+
+        <button onclick="makePassword()" class="w-full bg-purple-600 p-3 rounded-xl hover:bg-purple-700">Generate
+            Password</button>
+    </div>
+
+
+    <div id="temp" class="tab-content hidden max-w-md mx-auto card rounded-2xl p-5">
+        <h2 class="text-xl text-blue-300 mb-4">Temperature Converter</h2>
+
+        <div class="space-y-3">
+            <div>
+                <label class="text-sm">Celsius</label>
+                <input type="number" id="celsiusInput" oninput="cToF()"
+                    class="w-full bg-black/30 p-3 rounded-xl border border-white/10">
+            </div>
+            <div class="text-center text-xl">⇅</div>
+            <div>
+                <label class="text-sm">Fahrenheit</label>
+                <input type="number" id="fahrenheitInput" oninput="fToC()"
+                    class="w-full bg-black/30 p-3 rounded-xl border border-white/10">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="logic.js"></script>
+
+</body>
+
+</html>

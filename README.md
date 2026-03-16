@@ -38,13 +38,13 @@ Each task focuses on different aspects of web development and programming concep
   - **Tech**: HTML5, CSS, Tailwind CSS
 
   
-- **[Task 6](./Task6/)**
+- **[Task 6]("./Task%206/")**
   - **Description**:  Portfolio 
   - **Tech**: HTML5, Tailwind CSS, Javascript
 
       
-- **[Task 7](./Task7/)**
-  - **Description**: A responsive JavaScript toolkit showcasing modular, single-purpose utilities for temporal, unit, string, and health calculations in an elegant, device-       agnostic interface.
+- **[Task 7](./Task%207/)**
+  - **Description**: A responsive JavaScript toolkit showcasing modular, single-purpose utilities for temporal, unit, string, and health calculations in an elegant, device-agnostic interface.
   - **Tech**: HTML5, Tailwind CSS, Javascript
  
 - **[Task 8](./Task8/)**
@@ -54,6 +54,10 @@ Each task focuses on different aspects of web development and programming concep
 - **[Task 9](./Task9/)**
   - **Description**: Library Management System
   - **Tech**: React, Vite, Tailwind CSS, Node.js, Express.js
+    
+- **[Task 10](./Task10/)**
+  - **Description**: Personal Finance Dashboard
+  - **Tech**: React, Node.js, Express.js, Sequelize, Microsoft SQL Server, JWT, Recharts
 
 ## Objectives
 

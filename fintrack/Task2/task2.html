@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catchub</title>
+ 
+    <style>
+        :root {
+           
+            --accent-color: #FF5722;
+            --deep-shade: #2d3436;
+            --muted-shade: #7f8c8d;
+            --surface-light: #F9F9F9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--deep-shade);
+            overflow-x: hidden;
+            background: #fff;
+        }
+
+        .content-shell {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        h1, h2, h3 {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            color: var(--muted-shade);
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+        }
+
+     
+        .download-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .download-links img {
+            height: 45px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .download-links img:hover {
+            transform: scale(1.05);
+        }
+
+   
+        .prime-header {
+            padding: 50px 0;
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            background: radial-gradient(circle at 10% 20%, rgb(255, 252, 252) 0%, rgb(240, 240, 240) 90%);
+        }
+
+        .header-flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .header-text-area {
+            flex: 1;
+            padding-right: 20px;
+            max-width: 500px;
+        }
+
+        .brand-logo {
+            width: 200px;
+            margin-bottom: 20px;
+        }
+
+        .hero-headline {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: #444;
+        }
+
+        .hero-subhead {
+            font-size: 1rem;
+            color: var(--muted-shade);
+            margin-bottom: 30px;
+        }
+
+        .hero-graphic {
+            flex: 1.2;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+
+        .hero-graphic img {
+            max-width: 100%;
+            height: auto;
+        }
+
+   
+        .feature-panel {
+            padding: 80px 0;
+            position: relative;
+        }
+
+        .panel-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+       
+        .panel-row.flipped {
+            flex-direction: row-reverse;
+        }
+
+        .panel-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .panel-info h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .panel-media {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            min-width: 0;
+        }
+
+        .panel-media img {
+            max-width: 100%;
+            height: auto;
+            filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
+        }
+
+        .alt-bg {
+            background: linear-gradient(180deg, #fff 0%, #fcfcfc 100%);
+        }
+
+        .future-icon-box {
+            margin-bottom: 20px;
+        }
+
+        .future-icon-box img {
+            max-width: 100%;
+            height: 30px;
+            width: auto;
+        }
+
+       
+        .site-footer {
+            text-align: center;
+            padding: 60px 20px;
+            background: #fff;
+        }
+
+        .cta-label {
+            margin-bottom: 20px;
+        }
+
+        .bottom-links {
+            justify-content: center;
+            margin-bottom: 30px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .bottom-links img {
+            height: 50px;
+        }
+
+        .support-link {
+            font-size: 0.9rem;
+            color: var(--muted-shade);
+            margin-bottom: 40px;
+            display: block;
+        }
+
+        .support-link a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .partner-mark img {
+            width: 50px;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .prime-header {
+                flex-direction: column;
+                padding-top: 30px;
+            }
+
+            .header-flex, .panel-row, .panel-row.flipped {
+                flex-direction: column;
+            }
+
+            .header-text-area {
+                padding-right: 0;
+                margin-bottom: 30px;
+                text-align: center;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .download-links {
+                justify-content: center;
+            }
+
+            .hero-graphic img {
+                max-width: 80%;
+            }
+
+            .panel-info h2 {
+                font-size: 1rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .panel-info p {
+                font-size: 0.8rem;
+                line-height: 1.4;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="prime-header">
+        <div class="content-shell header-flex">
+            <div class="header-text-area">
+                <img src="images/logo.png" alt="Catchub" class="brand-logo">
+                <div class="hero-headline">WATCH. COMMUNICATE. CREATE.</div>
+                <div class="hero-subhead">Everything you need to socialise</div>
+
+                <div class="download-links">
+                    <img src="images/play_store.png" alt="Get it on Google Play">
+                    <img src="images/app_store.png" alt="Download on the App Store">
+                </div>
+            </div>
+            <div class="hero-graphic">
+                <img src="images/top_screens.png" alt="App Screens Preview">
+            </div>
+        </div>
+    </header>
+
+    <section id="channels" class="feature-panel alt-bg">
+        <div class="content-shell panel-row">
+            <div class="panel-media">
+                <img src="images/sec_screens.png" alt="Channels Screens">
+            </div>
+            <div class="panel-info">
+                <h2>Channels</h2>
+                <p>Enjoy the videos and music you love.<br>Create your own business<br>or entertainment channel.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="messages" class="feature-panel">
+        <div class="content-shell panel-row flipped"> <div class="panel-media">
+                <img src="images/thhh_screens.png" alt="Messaging Screens">
+            </div>
+            <div class="panel-info">
+                <h2>Messages</h2>
+                <p>Communicate seamlessly.<br>Create your own professional<br>or social group chat</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="future" class="feature-panel alt-bg">
+        <div class="content-shell panel-row">
+            <div class="panel-media">
+                <img src="images/for_screens.png" alt="Future Features Screens">
+            </div>
+            <div class="panel-info">
+                <div class="future-icon-box">
+                    <img src="images/vectors.png" alt="">
+                </div>
+                <h2>In Future</h2>
+                <p>Communicate seamlessly.<br>Create your own professional<br>or social group chat</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="content-shell">
+            <p class="cta-label">For download click here:</p>
+            <div class="bottom-links">
+                <img src="images/play_store.png" alt="Google Play">
+                <img src="images/app_store.png" alt="App Store">
+            </div>
+            <p class="support-link">Any questions? Feel free to <a href="#">CONTACT US</a></p>
+
+            <div class="partner-mark">
+                <img src="images/peratude.png" alt="Peratude">
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

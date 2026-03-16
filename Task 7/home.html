@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive JavaScript Logic & Converter Suite</title>
+    <link rel="stylesheet" href="style7.css">:
+
+
+</head>
+
+<body>
+
+    <h1 class="main-title">
+        Interactive JavaScript Logic & Converter Suite
+    </h1>
+
+    <div class="container">
+        <h2>Age to Days Converter</h2>
+        <input type="date" id="dob">
+        <button onclick="calculateDays()">Convert</button>
+        <div class="result" id="days-result"></div>
+    </div>
+
+    <div class="container">
+        <h2>Hours to Seconds</h2>
+        <input type="number" id="hours">
+        <button onclick="convertHours()">Convert</button>
+        <div class="result" id="seconds-result"></div>
+    </div>
+
+    <div class="container">
+        <h2>Find Next in Array</h2>
+        <div class="array-display">[10, 20, 30, 40, 50]</div>
+        <input type="number" id="arrayInput">
+        <button onclick="findNext()">Find</button>
+        <div class="result" id="array-result"></div>
+    </div>
+
+    <div class="container">
+        <h2>Next Number Logic</h2>
+        <input type="text" id="logicInput">
+        <button onclick="nextLogic()">Check</button>
+        <div class="result" id="logic-result"></div>
+    </div>
+
+    <div class="container">
+        <h2>Capitalize Name</h2>
+        <input type="text" id="nameInput">
+        <button onclick="capitalizeName()">Capitalize</button>
+        <div class="result" id="name-result"></div>
+    </div>
+
+    <div class="container">
+        <h2>BMI Calculator</h2>
+        <input type="number" id="weight" placeholder="Weight (kg)">
+        <input type="number" id="height" placeholder="Height (cm)">
+        <button onclick="calculateBMI()">Calculate</button>
+        <div class="result" id="bmi-result"></div>
+    </div>
+
+    <div class="container">
+        <h2>Random Array Picker</h2>
+        <button onclick="generateArray()" style="background:var(--accent-color)">Generate</button>
+        <div class="array-display" id="rand-array">[ ]</div>
+        <button onclick="pickElements()">Pick</button>
+        <div class="result" id="pick-result"></div>
+    </div>
+
+    <div class="container">
+        <h2>Live Addition</h2>
+        <input type="number" id="num1">
+        <input type="number" id="num2">
+        <input type="text" id="num3" readonly>
+    </div>
+
+    <script src="cal.js"></script>
+</body>
+
+</html>
